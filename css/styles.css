@@ -381,7 +381,7 @@ section.video #div-video {
 }
 @media screen and (max-width: 767px) {
   section.video {
-    height: 50vh;
+    height: 60vh;
   }
   section.video h4 {
     font-size: 6vh;
