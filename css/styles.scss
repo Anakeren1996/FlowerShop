@@ -257,6 +257,7 @@ section#carousel {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  overflow-y: hidden;
   #title {
     text-align: center;
   }
