@@ -323,7 +323,7 @@ section#carousel .btn-card:hover {
 }
 @media screen and (max-width: 767px) {
   section#carousel {
-    height: 300vh;
+    height: 370vh;
     align-items: center;
   }
   section#carousel .card-title {
@@ -429,7 +429,7 @@ section.texto-banner p {
 @media screen and (max-width: 767px) {
   section.texto-banner {
     background-image: none;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     align-items: baseline;
   }
@@ -496,7 +496,7 @@ section.texto-descritivo .btn-card:hover {
 }
 @media screen and (max-width: 767px) {
   section.texto-descritivo {
-    height: 115vh;
+    height: 105vh;
   }
   section.texto-descritivo .img-fluid {
     height: 50vh;

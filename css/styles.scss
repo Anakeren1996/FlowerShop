@@ -316,7 +316,7 @@ section#carousel {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 300vh;
+    height: 370vh;
     align-items: center;
     .card-title {
       font-size: 3vh;
@@ -414,7 +414,7 @@ section.texto-banner {
   }
   @media screen and (max-width: 767px) {
     background-image: none;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     align-items: baseline;
     .offer {
@@ -478,7 +478,7 @@ section.texto-descritivo {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 115vh;
+    height: 105vh;
     .img-fluid {
       height: 50vh;
     }
