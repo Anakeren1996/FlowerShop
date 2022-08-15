@@ -392,7 +392,7 @@ section.video #div-video {
 }
 @media screen and (width: 375px) {
   section.video {
-    height: 55vh;
+    height: 60vh;
   }
 }
 
@@ -428,7 +428,9 @@ section.texto-banner p {
 @media screen and (max-width: 767px) {
   section.texto-banner {
     background-image: none;
-    height: 17vh;
+    height: 20vh;
+    display: flex;
+    align-items: baseline;
   }
   section.texto-banner .offer {
     width: 100%;

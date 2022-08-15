@@ -380,7 +380,7 @@ section.video {
     }
   }
   @media screen and (width: 375px) {
-    height: 55vh;
+    height: 60vh;
   }
 }
 
@@ -413,7 +413,9 @@ section.texto-banner {
   }
   @media screen and (max-width: 767px) {
     background-image: none;
-    height: 17vh;
+    height: 20vh;
+    display: flex;
+    align-items: baseline;
     .offer {
       width: 100%;
     }
