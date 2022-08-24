@@ -189,7 +189,6 @@ section#topo .btn:hover {
 }
 section#topo .img-fluid {
   width: 100%;
-  height: 100vh;
 }
 @media screen and (max-width: 920px) {
   section#topo {
@@ -204,7 +203,8 @@ section#topo .img-fluid {
 }
 @media screen and (max-width: 767px) {
   section#topo {
-    height: 90vh;
+    height: 105vh;
+    display: flex;
   }
   section#topo .alinha-texto {
     height: 42vh;
@@ -215,9 +215,6 @@ section#topo .img-fluid {
   section#topo .lorem {
     margin: 0;
     font-size: 2.2vh;
-  }
-  section#topo .img-fluid {
-    height: 42vh;
   }
 }
 
@@ -323,17 +320,18 @@ section#carousel .btn-card:hover {
 }
 @media screen and (max-width: 767px) {
   section#carousel {
-    height: 370vh;
+    height: 300vh;
     align-items: center;
   }
   section#carousel .card-title {
     font-size: 3vh;
+    text-align: center;
   }
   section#carousel .card-text {
     font-size: inherit;
   }
   section#carousel .btn-card {
-    width: 60%;
+    width: 100%;
     height: 4vh;
   }
 }
@@ -344,7 +342,7 @@ section#carousel .btn-card:hover {
 }
 @media screen and (max-width: 375px) {
   section#carousel {
-    height: 360vh;
+    height: 350vh;
   }
 }
 
@@ -496,7 +494,7 @@ section.texto-descritivo .btn-card:hover {
 }
 @media screen and (max-width: 767px) {
   section.texto-descritivo {
-    height: 105vh;
+    height: 115vh;
   }
   section.texto-descritivo .img-fluid {
     height: 50vh;

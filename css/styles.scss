@@ -188,7 +188,7 @@ section#topo {
   }
   .img-fluid {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
   }
   @media screen and (max-width: 920px) {
     height: 84vh;
@@ -201,7 +201,8 @@ section#topo {
   }
 
   @media screen and (max-width: 767px) {
-    height: 90vh;
+    height: 105vh;
+    display: flex;
     .alinha-texto {
       height: 42vh;
     }
@@ -211,9 +212,6 @@ section#topo {
     .lorem {
       margin: 0;
       font-size: 2.2vh;
-    }
-    .img-fluid {
-      height: 42vh;
     }
   }
 }
@@ -316,16 +314,17 @@ section#carousel {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 370vh;
+    height: 300vh;
     align-items: center;
     .card-title {
       font-size: 3vh;
+      text-align: center;
     }
     .card-text {
       font-size: inherit;
     }
     .btn-card {
-      width: 60%;
+      width: 100%;
       height: 4vh;
     }
   }
@@ -333,11 +332,8 @@ section#carousel {
     height: 400vh;
   }
   @media screen and (max-width: 375px) {
-    height: 360vh;
+    height: 350vh;
   }
-  // .setas {
-  //   text-align: center;
-  // }
 }
 
 section.video {
@@ -363,7 +359,6 @@ section.video {
 
   @media screen and (max-width: 912px) {
     height: 35vh;
-    // align-items: baseline;
     h4 {
       font-size: 3vh;
     }
@@ -478,7 +473,7 @@ section.texto-descritivo {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 105vh;
+    height: 115vh;
     .img-fluid {
       height: 50vh;
     }
