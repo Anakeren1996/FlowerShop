@@ -428,8 +428,6 @@ section.texto-banner p {
   section.texto-banner {
     background-image: none;
     height: 25vh;
-    display: flex;
-    align-items: baseline;
   }
   section.texto-banner .offer {
     width: 100%;
