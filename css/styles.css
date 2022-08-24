@@ -427,7 +427,7 @@ section.texto-banner p {
 @media screen and (max-width: 767px) {
   section.texto-banner {
     background-image: none;
-    height: 25vh;
+    height: 30vh;
   }
   section.texto-banner .offer {
     width: 100%;
