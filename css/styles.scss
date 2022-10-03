@@ -14,9 +14,6 @@ body {
   background-image: url("/images/Background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 767px) {
-    background-position: center;
-  }
 }
 
 ul {
@@ -24,136 +21,41 @@ ul {
   padding: 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Montserrat-ExtraBold";
-  text-transform: uppercase;
-  font-size: 4vh;
-}
-
-a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-#header {
-  background-color: #c87e6b;
-  box-sizing: border-box;
-  padding: 1rem;
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
-}
-
-#menu {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-}
-
-#menu a {
-  display: block;
-  padding: 0.5rem;
-}
-
-#menu a:hover {
-  text-decoration: none;
-  color: #fff;
-}
-
-#btn-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 920px) {
-  #menu {
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background-color: #c87e6b;
-    color: #fff;
-    transition: 0.6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-
-  #nav.active #menu {
-    display: block;
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: auto;
-  }
-
-  #menu a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-  }
-
-  #btn-mobile {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-    color: #fff;
-  }
-
-  #btn-mobile:hover {
-    color: #fff;
-  }
-
-  #hamburger {
-    display: block;
-    border-top: 2px solid;
-    width: 20px;
-  }
-
-  #hamburger::after,
-  #hamburger::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: 0.3s;
+  transition: 0.5s;
+  background-color: #c87e6b;
+  .navigation {
     position: relative;
+    display: flex;
   }
-
-  #nav.active #hamburger {
-    border-top-color: transparent;
+  .navigation li {
+    list-style: none;
+    margin-left: 30px;
   }
-
-  #nav.active #hamburger::before {
-    transform: rotate(135deg);
-  }
-
-  #nav.active #hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
+  .navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat-ExtraBold";
+    text-transform: uppercase;
+    font-size: 4vh;
   }
 }
 
 section#topo {
-  width: 100%;
-  height: 100vh;
+  padding: 100px;
   #arranjo {
     display: flex;
-    align-items: center;
     justify-content: center;
   }
   .alinha-texto {
     text-align: center;
-    height: 70vh;
   }
   h2 {
     font-family: "PlayfairDisplay-Bold";
@@ -190,40 +92,13 @@ section#topo {
     width: 100%;
     // height: 100vh;
   }
-  @media screen and (max-width: 920px) {
-    height: 84vh;
-    .img-fluid {
-      height: auto;
-    }
-    .lorem {
-      margin: 2vh;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    height: 105vh;
-    display: flex;
-    .alinha-texto {
-      height: 42vh;
-    }
-    h2 {
-      font-size: 6vh;
-    }
-    .lorem {
-      margin: 0;
-      font-size: 2.2vh;
-    }
-  }
 }
 
 section.numeros {
   background-color: #6b502c;
-  width: 100%;
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  bottom: 20vh;
+  padding: 100px;
+  // position: relative;
+  // bottom: 20vh;
   p {
     margin: 0;
   }
@@ -239,23 +114,29 @@ section.numeros {
     text-align: center;
     color: #ffffff;
   }
+}
 
-  @media screen and (max-width: 912px) {
-    bottom: 12vh;
+section.video {
+  padding: 40px;
+  h4 {
+    font-family: "PlayfairDisplay-Bold";
+    color: #484a4b;
+    font-size: 6vh;
+    text-align: center;
   }
-  @media screen and (max-width: 767px) {
-    background-color: #6b502c;
-    height: 70vh;
-    bottom: 0;
+  p {
+    font-family: "MontserratAlternates-Medium";
+    font-size: 3vh;
+    color: #ad9d84;
+    text-align: center;
+  }
+  #div-video {
+    max-width: 100%;
   }
 }
 
 section#carousel {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  overflow-y: hidden;
+  padding: 100px;
   #title {
     text-align: center;
   }
@@ -300,94 +181,14 @@ section#carousel {
       color: #454545;
     }
   }
-
-  @media screen and (max-width: 912px) {
-    .card-title {
-      font-size: 2vh;
-    }
-    .card-text {
-      font-size: 1.5vh;
-    }
-    .btn-card {
-      width: 100%;
-      height: 8vh;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    height: 300vh;
-    align-items: center;
-    .card-title {
-      font-size: 3vh;
-      text-align: center;
-    }
-    .card-text {
-      font-size: inherit;
-    }
-    .btn-card {
-      width: 100%;
-      height: 4vh;
-    }
-  }
-  @media screen and (width: 540px) {
-    height: 400vh;
-  }
-  @media screen and (max-width: 375px) {
-    height: 350vh;
-  }
-}
-
-section.video {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  h4 {
-    font-family: "PlayfairDisplay-Bold";
-    color: #484a4b;
-    font-size: 8vh;
-    text-align: center;
-  }
-  p {
-    font-family: "MontserratAlternates-Medium";
-    font-size: 5vh;
-    color: #ad9d84;
-    text-align: center;
-  }
-  #div-video {
-    max-width: 100%;
-  }
-
-  @media screen and (max-width: 912px) {
-    height: 35vh;
-    h4 {
-      font-size: 3vh;
-    }
-    p {
-      font-size: 2vh;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    height: 60vh;
-    h4 {
-      font-size: 6vh;
-    }
-    p {
-      font-size: inherit;
-    }
-  }
-  @media screen and (width: 375px) {
-    height: 60vh;
-  }
 }
 
 section.texto-banner {
-  width: 100%;
-  height: 40vh;
-  background-image: url("/images/img-sale-desktop.png");
+  padding: 100px;
+  background-image: url(/images/img-sale-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
+  background-position: center;
   .offer {
     width: 45%;
     text-align: center;
@@ -403,30 +204,10 @@ section.texto-banner {
     color: #fff;
     text-align: justify;
   }
-
-  @media screen and (max-width: 912px) {
-    background-position: center;
-  }
-  @media screen and (max-width: 767px) {
-    background-image: none;
-    height: 30vh;
-    .offer {
-      width: 100%;
-    }
-    h4 {
-      font-size: 4vh;
-      text-align: center;
-    }
-    .lorem {
-      text-align: center;
-    }
-  }
 }
 
 section.texto-descritivo {
-  height: 70vh;
-  display: flex;
-  align-items: center;
+  padding: 100px;
   .img-fluid {
     height: 50vh;
   }
@@ -457,44 +238,10 @@ section.texto-descritivo {
       color: #454545;
     }
   }
-
-  @media screen and (max-width: 912px) {
-    height: 46vh;
-    h4 {
-      font-size: 5vh;
-    }
-    p {
-      font-size: 2vh;
-    }
-    .img-fluid {
-      height: auto;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    height: 115vh;
-    .img-fluid {
-      height: 50vh;
-    }
-    h4 {
-      font-size: 8vh;
-    }
-    p {
-      font-size: 3vh;
-    }
-    .btn-card {
-      margin: auto;
-      display: block;
-    }
-    #mobile {
-      margin-bottom: 2vh;
-    }
-  }
 }
 
 section#contato {
-  height: 60vh;
-  display: flex;
-  align-items: center;
+  padding: 100px;
   h4 {
     font-family: "PlayfairDisplay-Bold";
     color: #484a4b;
@@ -523,23 +270,15 @@ section#contato {
       color: #c87e6b;
     }
   }
-
-  @media screen and (max-width: 767px) {
-    height: 70vh;
-  }
-  @media screen and (max-width: 300px) {
-    .btn-form {
-      font-size: 1.5vh;
-    }
-  }
 }
 
 footer {
-  display: flex;
-  align-items: center;
+  padding: 100px;
+  // display: flex;
+  // align-items: center;
   background-color: #424242;
   color: #fff;
-  height: 40vh;
+  // height: 40vh;
   #div-centro {
     display: flex;
     align-items: center;
@@ -555,36 +294,120 @@ footer {
   }
   a {
     text-decoration: none;
+    color: #fff;
     &:hover {
       text-decoration: none;
       color: #fff;
     }
   }
+}
 
-  @media screen and (max-width: 912px) {
-    .img-social {
-      width: 27%;
+@media screen and (max-width: 991px) {
+  header {
+    padding: 40px 30px;
+  }
+  header .navigation {
+    display: none;
+  }
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 120px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c87e6b;
+  }
+  header .navigation li {
+    margin-left: 0;
+  }
+  header .navigation li a {
+    color: #fff;
+    font-size: 2.5em;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url("/images/menu-header.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active {
+    background: url("/images/close.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  section#topo {
+    padding: 20px;
+  }
+
+  section.numeros {
+    padding: 20px;
+  }
+
+  section.video {
+    padding: 20px;
+  }
+
+  section#carousel {
+    padding: 20px;
+    .card {
+      margin-bottom: 10px;
+    }
+    .card-title {
+      font-size: 2vh;
+    }
+    .btn-card {
+      width: 100%;
+      height: 6vh;
+      font-size: 1.5vh;
     }
   }
-  @media screen and (max-width: 767px) {
-    height: 105vh;
-    #div-centro {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 2vh;
+
+  section.texto-banner {
+    padding: 20px;
+    h4 {
+      font-size: 4vh;
     }
-    #div-col {
-      height: 30vh;
-      text-align: center;
-    }
-    .img-social {
-      width: inherit;
-    }
+  }
+
+  section.texto-descritivo {
+    padding: 20px;
+  }
+
+  section#contato {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 20px;
   }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 83%;
+@media screen and (max-width: 767px) {
+  section#topo {
+    h2 {
+      font-size: 2em;
+    }
+  }
+
+  section.texto-banner h4 {
+    font-size: 2.5vh;
+  }
+
+  section#contato h4 {
+    font-size: 6vh;
+  }
+
+  footer #centro-mobile {
+    text-align: center;
   }
 }

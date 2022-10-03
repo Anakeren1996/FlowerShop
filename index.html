@@ -14,46 +14,35 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <img class="logo-header" src="/images/header/Logo.png" alt="Logo Menu">
-        <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">
-                <span id="hamburger">
-
-                </span>
-            </button>
-            <ul id="menu" role="menu">
-                <li>
-                    <a href="#video">Sobre</a>
-                </li>
-                <li>
-                    <a href="#carousel">Produtos</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="menuToggle" onclick="menuToggle();"></div>
+        <ul class="navigation">
+            <li><a href="#video" onclick="menuToggle();">Sobre</a></li>
+            <li><a href="#carousel" onclick="menuToggle();">Produtos</a></li>
+            <li><a href="#contato" onclick="menuToggle();">Contato</a></li>
+        </ul>
     </header>
 
     <section id="topo">
-        <div class="row">
-            <div class="col-md-6 animate__animated animate__fadeInLeft" id="arranjo">
-                <div class="alinha-texto">
-                    <h2>Flower <br> Arrangements</h2>
-                    <p class="special">For all special ocasions</p>
-                    <p class="lorem">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod
-                        tempor <br> incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <div class="botoes">
-                        <button class="btn">Shop</button>
-                        <button class="btn">Read More</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 animate__animated animate__fadeInLeft" id="arranjo">
+                    <div class="alinha-texto">
+                        <h2>Flower <br> Arrangements</h2>
+                        <p class="special">For all special ocasions</p>
+                        <p class="lorem">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod
+                            tempor <br> incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="botoes">
+                            <button class="btn">Shop</button>
+                            <button class="btn">Read More</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 animate__animated animate__fadeInRight">
-                <img class="img-fluid" src="/images/img-best-flower.png" alt="">
+                <div class="col-md-6 animate__animated animate__fadeInRight">
+                    <img class="img-fluid" src="/images/img-best-flower.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -235,38 +224,44 @@
 
     <section id="contato">
         <div class="container">
-            <h4>Contact us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            <form>
-                <div class="form-group">
-                    <input type="name" class="form-control" placeholder="Your Name">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Contact us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" rows="3"></textarea>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn-form">Send Message</button>
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Mail">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" placeholder="Your Message" rows="3"></textarea>
-                </div>
-            </form>
-            <button type="submit" class="btn-form">Send Message</button>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3" id="div-centro">
+                <div class="col-md-3" id="centro-mobile">
                     <img class="logo-footer" src="/images/footer/Logo.png" alt="">
                 </div>
-                <div class="col-md-3" id="div-col">
+                <div class="col-md-3" id="centro-mobile">
                     <h4>What we do</h4>
                     <p>News and stories</p>
                     <p>Publications</p>
                     <p>Take actions</p>
                     <p>Recomendatios</p>
                 </div>
-                <div class="col-md-3" id="div-col">
+                <div class="col-md-3" id="centro-mobile">
                     <h4>Our company</h4>
                     <p>Street</p>
                     <p>City</p>
@@ -275,7 +270,7 @@
                         <p>www.site.com.br</p>
                     </a>
                 </div>
-                <div class="col-md-3" id="div-col">
+                <div class="col-md-3" id="centro-mobile">
                     <h4>Follow us</h4>
                     <a href="https://pt-br.facebook.com/" target="_blank">
                         <img class="img-social" src="/images/footer/facebook-icon.png" alt="">
@@ -292,7 +287,6 @@
     </footer>
 </body>
 
-<script src="/js/menu.js" defer></script>
-<script src="/js/video.js" defer></script>
+<script src="/js/main.js" defer></script>
 
 </html>

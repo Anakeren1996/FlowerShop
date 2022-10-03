@@ -1,3 +1,10 @@
+function menuToggle() {
+  const menuToggle = document.querySelector(".menuToggle");
+  const navigation = document.querySelector(".navigation");
+  menuToggle.classList.toggle("active");
+  navigation.classList.toggle("active");
+}
+
 var players = document.querySelectorAll(".youtube-player");
 
 var loadPlayer = function (event) {
